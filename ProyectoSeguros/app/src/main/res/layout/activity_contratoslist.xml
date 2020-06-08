@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grdnt">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+        <LinearLayout
+            android:layout_width="274dp"
+            android:layout_height="266dp"
+            android:layout_marginTop="100px"
+            android:layout_marginBottom="100px"
+            android:orientation="vertical"
+            android:paddingLeft="20px">
+
+            <ListView
+                android:id="@+id/listaCliente"
+                android:layout_width="match_parent"
+                android:layout_height="249dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/verContratosU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#009a9a"
+            android:onClick="verClientes"
+            android:text="Ver clientes"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/verVendedoresU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#009a9a"
+            android:onClick="verVendedores"
+            android:text="Ver vendedores"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="400dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ibytes"
+            />
+    </LinearLayout>
+</RelativeLayout>
